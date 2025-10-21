@@ -23,6 +23,7 @@ mod:registerAsset({
   }
 })
 
+
 mod:registerAsset({
   DataType = "BUILDING_FUNCTION_ASSIGNABLE",
   Id = "BUILDING_FUNCTION_ASSIGNABLE_SEAFOOD_FISHERY",

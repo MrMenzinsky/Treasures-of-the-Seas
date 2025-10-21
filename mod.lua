@@ -38,3 +38,58 @@ mod:dofile("scripts/resources.lua")
 
 -- Building and related functions
 mod:dofile("scripts/building.lua")
+
+
+-- Register the Seafood Fishery in Common Tier 2
+mod:overrideAsset({
+  Id = "PROGRESS_TIER_COMMON_T2",
+  UnlockableList = {
+    Action = "APPEND",
+    "UNLOCKABLE_SEAFOOD_FISHERY"
+  }
+})
+
+
+-- Unlockable Technology for the Seafood Fishery
+mod:registerAsset({
+  DataType = "UNLOCKABLE_TECHNOLOGY",
+  Id = "UNLOCKABLE_COMMON_SEAFOOD_FISHERY_PRODUCTION",
+  Name = "UNLOCKABLE_COMMON_SEAFOOD_FISHERY_PRODUCTION_NAME",
+  Description = "UNLOCKABLE_COMMON_SEAFOOD_FISHERY_PRODUCTION_DESC",
+  OptionalNameParameter = "UNLOCKABLE_COMMON_SEAFOOD_FISHERY_PRODUCTION_NAME_OPTIONAL",
+  BoughtText = "UNLOCKABLE_COMMON_SEAFOOD_FISHERY_PRODUCTION_BOUGHT",
+  DataCost = {
+    DataInfluenceCostList = {},
+    ResourceCollection = {
+      {
+        Resource = "GOLD_COINS",
+        Quantity = 50
+      }
+    }
+  },
+  PrerequisiteUnlockableList = {
+    "UNLOCKABLE_COMMON_FISHING_PRODUCTION"
+  },
+  IsMajor = false,
+  ActionList = {
+    {
+      DataType = "GAME_ACTION_UNLOCK_BUILDING_LIST",
+      BuildingProgressData = {
+        DataType = "BUILDING_PROGRESS",
+        UnlockName = "UNLOCKNAME_BUILDING_SEAFOOD_FISHERY",
+        AssetBuildingList = {
+          "BUILDING_SEAFOOD_FISHERY"
+        },
+        AdditionalBuildingUnlockList = {},
+        AssetBuildingFunctionList = {
+          "BUILDING_FUNCTION_ASSIGNABLE_SEAFOOD_FISHERY",
+          "BUILDING_FUNCTION_SEAFOOD_FISHERY_CRABS",
+          "BUILDING_FUNCTION_SEAFOOD_FISHERY_SHRIMPS",
+          "BUILDING_FUNCTION_SEAFOOD_FISHERY_LOBSTERS"
+        },
+        DataEstateDecorationList = {}
+      }
+    }
+  },
+  UnlockableImage = "ICON_UNLOCKABLE_FISHING" -- Fix custom graphics
+})
