@@ -1,0 +1,3 @@
+local mod = ...
+
+-- Fix custom building parts here
