@@ -6,10 +6,10 @@ local mod = ...
  mod:registerAssetId("icons/lobster.png", "ICON_RESOURCE_LOBSTER", "ATLAS_CELL")
  
  -- Existing RESOURCE_TYPE:s
- -- FOOD (for storage?)
- -- RESOURCE_FOOD (serfs?)
- -- FOOD_ADVANCED (commoners?)
- -- LUXURY_FOOD (citizens?)
+ -- RESOURCE_FOOD (raw food)
+ -- FOOD (for Serfs)
+ -- FOOD_ADVANCED (for Commoners)
+ -- LUXURY_FOOD (for Citizens)
  
  mod:registerAsset({
    DataType = "RESOURCE",
@@ -17,8 +17,7 @@ local mod = ...
    ResourceName = "RESOURCE_CRAB_NAME",
    Icon = "ICON_RESOURCE_CRAB",
    ResourceTypeList = {
-     "FOOD",
-     "RESOURCE_FOOD"
+     "FOOD"
    },
    ResourceLayoutType = "BASKET",
    IsTradable = false, -- Fix trading later
@@ -44,7 +43,6 @@ local mod = ...
    ResourceName = "RESOURCE_SHRIMP_NAME",
    Icon = "ICON_RESOURCE_SHRIMP",
    ResourceTypeList = {
-     "FOOD",
      "FOOD_ADVANCED"
    },
    ResourceLayoutType = "BASKET",
@@ -71,7 +69,6 @@ local mod = ...
    ResourceName = "RESOURCE_LOBSTER_NAME",
    Icon = "ICON_RESOURCE_LOBSTER",
    ResourceTypeList = {
-     "FOOD",
      "LUXURY_FOOD"
    },
    ResourceLayoutType = "BASKET",

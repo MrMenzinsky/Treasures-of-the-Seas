@@ -8,7 +8,7 @@ mod:registerAsset({
   Id = "BUILDING_SEAFOOD_FISHERY",
   Name = "BUILDING_SEAFOOD_FISHERY_NAME",
   Description = "BUILDING_SEAFOOD_FISHERY_DESC",
-  BuildingType = "RESOURCE_PRODUCTION",
+  BuildingType = "FOOD_PRODUCTION",
   NavMeshLockCategory = "NONE",
   OptionalSubBuildingIcon = nil,
   AssetCoreBuildingPart = "BUILDING_PART_FISHERS_HUT", -- Fix custom building_part and graphics
@@ -48,7 +48,7 @@ mod:registerAsset({
 })
 
 mod:registerAsset({
-  DataType = "BUILDING_FUNCTION_ASSIGNABLE",
+  DataType = "BUILDING_FUNCTION_WORKPLACE",
   Id = "BUILDING_FUNCTION_SEAFOOD_FISHERY_CRABS",
 
   -- BUILDING_FUNCTION properties
@@ -84,7 +84,7 @@ mod:registerAsset({
 
 
 mod:registerAsset({
-  DataType = "BUILDING_FUNCTION_ASSIGNABLE",
+  DataType = "BUILDING_FUNCTION_WORKPLACE",
   Id = "BUILDING_FUNCTION_SEAFOOD_FISHERY_SHRIMPS",
 
   -- BUILDING_FUNCTION properties
@@ -120,7 +120,7 @@ mod:registerAsset({
 
 
 mod:registerAsset({
-  DataType = "BUILDING_FUNCTION_ASSIGNABLE",
+  DataType = "BUILDING_FUNCTION_WORKPLACE",
   Id = "BUILDING_FUNCTION_SEAFOOD_FISHERY_LOBSTERS",
 
   -- BUILDING_FUNCTION properties

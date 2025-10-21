@@ -33,6 +33,10 @@ local mod = foundation.createMod();
 -- mod:registerAssetId("models/Seafood.fbx/Prefab/Single_Lobster_3", "PREFAB_SINGLE_LOBSTER_3")
 
 
+-- Custom icon for the Seafood Fishery unlockable
+-- mod:registerAssetId("icons/icon_unlockable_seafood_fishery.png", "ICON_UNLOCKABLE_SEAFOOD_FISHERY", "ATLAS_CELL")
+
+
 -- Resources and their assets (icons)
 mod:dofile("scripts/resources.lua")
 
@@ -45,7 +49,7 @@ mod:overrideAsset({
   Id = "PROGRESS_TIER_COMMON_T2",
   UnlockableList = {
     Action = "APPEND",
-    "UNLOCKABLE_SEAFOOD_FISHERY"
+    "UNLOCKABLE_COMMON_SEAFOOD_FISHERY_PRODUCTION"
   }
 })
 
@@ -81,15 +85,11 @@ mod:registerAsset({
           "BUILDING_SEAFOOD_FISHERY"
         },
         AdditionalBuildingUnlockList = {},
-        AssetBuildingFunctionList = {
-          "BUILDING_FUNCTION_ASSIGNABLE_SEAFOOD_FISHERY",
-          "BUILDING_FUNCTION_SEAFOOD_FISHERY_CRABS",
-          "BUILDING_FUNCTION_SEAFOOD_FISHERY_SHRIMPS",
-          "BUILDING_FUNCTION_SEAFOOD_FISHERY_LOBSTERS"
-        },
+        AssetBuildingFunctionList = {},
         DataEstateDecorationList = {}
       }
     }
   },
-  UnlockableImage = "ICON_UNLOCKABLE_FISHING" -- Fix custom graphics
+  UnlockableImage = "ICON_UNLOCKABLE_FISHING" -- Placeholder icon
+  -- UnlockableImage = "ICON_UNLOCKABLE_SEAFOOD_FISHERY" -- Fix custom graphics
 })
