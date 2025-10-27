@@ -1,9 +1,28 @@
 local mod = ...
 
  -- Fix custom graphics for icons
- mod:registerAssetId("icons/crab.png", "ICON_RESOURCE_CRAB", "ATLAS_CELL")
- mod:registerAssetId("icons/shrimp.png", "ICON_RESOURCE_SHRIMP", "ATLAS_CELL")
- mod:registerAssetId("icons/lobster.png", "ICON_RESOURCE_LOBSTER", "ATLAS_CELL")
+ mod:registerAssetId("icons/Icon_Crab.png", "ICON_RESOURCE_CRAB", "ATLAS_CELL")
+ mod:registerAssetId("icons/Icon_Shrimp.png", "ICON_RESOURCE_SHRIMP", "ATLAS_CELL")
+ mod:registerAssetId("icons/Icon_Lobster.png", "ICON_RESOURCE_LOBSTER", "ATLAS_CELL")
+
+ mod:overrideAsset({
+  Id = "ICON_RESOURCE_CRAB",
+  UsageSizeList = {
+    {36, 0}, {60, 0}
+  }
+})
+mod:overrideAsset({
+  Id = "ICON_RESOURCE_SHRIMP",
+  UsageSizeList = {
+    {36, 0}, {60, 0}
+  }
+})
+mod:overrideAsset({
+  Id = "ICON_RESOURCE_LOBSTER",
+  UsageSizeList = {
+    {36, 0}, {60, 0}
+  }
+})
  
  -- Existing RESOURCE_TYPE:s
  -- RESOURCE_FOOD (raw food)

@@ -17,4 +17,8 @@ IdMap = {
 	{ "UNLOCKABLE_COMMON_SEAFOOD_FISHERY_PRODUCTION", "UNLOCKABLE", "de0632ae-0a6e-4aaa-883b-05b28c4b36a5" },
 	{ "icons/crab.png", "", "3e2cc6c1-3d37-4bd0-8d27-b3a37ec3d452" },
 	{ "icons/shrimp.png", "", "2d538f46-06c2-4183-9e06-174f09c9197b" },
+	{ "icons/Icon_Crab.png", "", "8fad0d5b-1132-45b2-a5b2-0021e622caa8" },
+	{ "icons/Icon_Lobster.png", "", "6f547f8f-ccbd-4ec7-8940-cac2557b64b8" },
+	{ "icons/Icon_Shrimp.png", "", "4011e59d-bcf2-4036-8cfb-0dee3086bbdd" },
+	{ "icons/Icon_Unlockable_Seafood_Fishery.png", "", "7aedf878-2521-4337-94b3-ba0ad1302248" },
 }

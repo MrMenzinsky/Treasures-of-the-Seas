@@ -34,8 +34,13 @@ local mod = foundation.createMod();
 
 
 -- Custom icon for the Seafood Fishery unlockable
--- mod:registerAssetId("icons/icon_unlockable_seafood_fishery.png", "ICON_UNLOCKABLE_SEAFOOD_FISHERY", "ATLAS_CELL")
-
+mod:registerAssetId("icons/Icon_Unlockable_Seafood_Fishery.png", "ICON_UNLOCKABLE_SEAFOOD_FISHERY", "ATLAS_CELL")
+mod:overrideAsset({
+  Id = "ICON_UNLOCKABLE_SEAFOOD_FISHERY",
+  UsageSizeList = {
+    {36, 0}, {60, 0}
+  }
+})
 
 -- Resources and their assets (icons)
 mod:dofile("scripts/resources.lua")
@@ -90,6 +95,5 @@ mod:registerAsset({
       }
     }
   },
-  UnlockableImage = "ICON_UNLOCKABLE_FISHING" -- Placeholder icon
-  -- UnlockableImage = "ICON_UNLOCKABLE_SEAFOOD_FISHERY" -- Fix custom graphics
+  UnlockableImage = "ICON_UNLOCKABLE_SEAFOOD_FISHERY"
 })
